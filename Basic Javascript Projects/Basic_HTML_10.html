@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="JS/Basic_Javascript_10.js"></script>
+</head>
+
+<body>
+    <p id="Loop"></p>
+    <button onclick="Call_Loop()">Click here to execute the loop.</button>
+    <p id="stringLength"></p>
+    <button onclick="lengthFunction()">Click Here</button>
+    <p id="List_of_Instruments"></p>
+    <button onclick="for_Loop()">Click Here</button>
+    <p id="Array"></p>
+    <button onclick="array_Function()">Click Here</button>
+    <p id="Constant"></p>
+    <button onclick="constant_function()">Click Here!</button>
+    <p id="Let"></p>
+    <p id="Return"></p>
+    <script>
+    function return_Function(name) {
+    return "Hello " + name;
+}
+document.getElementById("Return").innerHTML = return_Function("Austin");
+</script>
+    <p id="Car_Object"></p>
+    <script>
+        let car = {
+    make: "Porsche ",
+    model: "944 ",
+    year: "1988 ",
+    color: "red ",
+    description : function() {
+        return "The car is a " + this.year + this.color + this.make + this.model;
+    }
+};
+document.getElementById("Car_Object").innerHTML = car.description();
+    </script>
+    <p id="Break"></p>
+    <script>
+        var text = "";
+        var i;
+        for (i = 0; i < 10; i++) {
+            if (i === 3) { break; }
+            text += "The number is " + i + "<br>";
+        }
+        document.getElementById("Break").innerHTML = text;
+    </script>
+    <p id="Continue"></p>
+    <script>
+        var text = "";
+        var i;
+        for (i = 0; i < 10; i++) {
+            if (i === 3) { continue; }
+            text += "The number is " + i + "<br>";
+        }
+        document.getElementById("Continue").innerHTML = text;
+    </script>
+</body>
+</html>
