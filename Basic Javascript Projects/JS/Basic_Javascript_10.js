@@ -8,7 +8,7 @@ function Call_Loop() {
     document.getElementById("Loop").innerHTML = Digit;
 }
 
-function lengthFunction() {
+function lengthFunction() { //tells us the string length
     var string = "How are you?";
     var result = string.length;
     document.getElementById("stringLength").innerHTML = result;
